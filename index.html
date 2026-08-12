@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DEATHADDER</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="topBar">
+
+        <div class="logoArea">
+
+            <img src="assets/logo.png" id="logo" alt="DEATHADDER Logo">
+
+            <div class="branding">
+                <h1>DEATHADDER</h1>
+                <p>Wireless Assessment Console</p>
+            </div>
+
+        </div>
+
+        <div class="statusPanel">
+
+            <div class="statusBox">
+
+                <span class="statusTitle">STATUS</span>
+
+                <div class="statusLine">
+
+                    <div class="statusCircle"></div>
+
+                    <span id="status">Disconnected</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= ACTION BAR ================= -->
+
+    <section class="toolbar">
+
+        <button id="connectBtn" class="primary">
+            CONNECT
+        </button>
+
+        <button id="disconnectBtn">
+            DISCONNECT
+        </button>
+
+        <button id="clearBtn">
+            CLEAR
+        </button>
+
+        <button id="saveBtn">
+            SAVE LOG
+        </button>
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="dashboard">
+
+        <!-- Terminal -->
+
+        <section class="terminalPanel">
+
+            <div class="terminalHeader">
+
+                <span>● TERMINAL</span>
+
+                <span class="terminalState">
+                    READY
+                </span>
+
+            </div>
+
+            <div id="terminal"></div>
+
+        </section>
+
+        <!-- Side Info -->
+
+        <aside class="sidePanel">
+
+            <div class="infoCard">
+
+                <h3>DEVICE</h3>
+
+                <p>ESP32</p>
+
+            </div>
+
+            <div class="infoCard">
+
+                <h3>INTERFACE</h3>
+
+                <p>USB Serial</p>
+
+            </div>
+
+            <div class="infoCard">
+
+                <h3>FRAMEWORK</h3>
+
+                <p>DEATHADDER</p>
+
+            </div>
+
+            <div class="infoCard">
+
+                <h3>VERSION</h3>
+
+                <p>v1.0</p>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- ================= COMMAND ================= -->
+
+    <section class="commandBar">
+
+        <input
+            id="commandInput"
+            type="text"
+            placeholder="Enter command...">
+
+        <button id="sendBtn">
+
+            SEND
+
+        </button>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+<script src="js/serial.js"></script>
+
+</body>
+</html>

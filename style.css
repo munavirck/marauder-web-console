@@ -1,0 +1,408 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:Consolas,monospace;
+
+}
+
+body{
+
+    background:#0d0d0d;
+
+    color:#00ff66;
+
+}
+
+.app{
+
+    width:94%;
+
+    margin:auto;
+
+    padding-top:25px;
+
+}
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    border:1px solid #1d1d1d;
+
+    background:#151515;
+
+    border-radius:10px;
+
+}
+
+.logoArea{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+#logo{
+
+    width:75px;
+
+    height:75px;
+
+    margin-right:20px;
+
+}
+
+h1{
+
+    font-size:40px;
+
+    color:#00ff66;
+
+    letter-spacing:4px;
+
+}
+
+.logoArea span{
+
+    color:#777;
+
+}
+
+.connection{
+
+    display:flex;
+
+    align-items:center;
+
+    font-size:20px;
+
+}
+
+.statusCircle{
+
+    width:15px;
+
+    height:15px;
+
+    border-radius:50%;
+
+    background:red;
+
+    margin-right:12px;
+
+}
+
+.toolbar{
+
+    margin-top:20px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+button{
+
+    padding:14px 25px;
+
+    background:#191919;
+
+    color:#00ff66;
+
+    border:1px solid #00ff66;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+button:hover{
+
+    background:#00ff66;
+
+    color:#000;
+
+}
+
+.terminalContainer{
+
+    margin-top:20px;
+
+    border:1px solid #00aa44;
+
+    border-radius:8px;
+
+}
+
+.terminalHeader{
+
+    padding:12px;
+
+    background:#121212;
+
+    border-bottom:1px solid #00aa44;
+
+    font-weight:bold;
+
+}
+
+#terminal{
+
+    background:#000;
+
+    height:500px;
+
+    overflow-y:auto;
+
+    padding:20px;
+
+    white-space:pre-wrap;
+
+    color:#00ff66;
+
+    font-size:16px;
+
+    line-height:1.5;
+
+}
+
+.commandBar{
+
+    margin-top:20px;
+
+    display:flex;
+
+}
+
+.commandBar input{
+
+    flex:1;
+
+    padding:16px;
+
+    background:#121212;
+
+    color:#00ff66;
+
+    border:1px solid #00ff66;
+
+    outline:none;
+
+}
+
+.commandBar button{
+
+    margin-left:15px;
+
+}
+/* ===========================================
+   DEATHADDER Tactical Layout
+   =========================================== */
+
+.topBar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    margin-bottom:20px;
+}
+
+.logoArea{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+#logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    filter:
+        drop-shadow(0 0 12px rgba(255,0,0,.6))
+        drop-shadow(0 0 28px rgba(255,0,0,.25));
+}
+
+.branding h1{
+    margin:0;
+    font-size:34px;
+    letter-spacing:5px;
+    color:#fff;
+}
+
+.branding p{
+    margin-top:6px;
+    color:#9d9d9d;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.statusPanel{
+    display:flex;
+}
+
+.statusBox{
+    background:#101010;
+    border:1px solid #333;
+    border-radius:12px;
+    padding:16px 24px;
+    min-width:220px;
+}
+
+.statusTitle{
+    display:block;
+    color:#ff4040;
+    font-size:12px;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.statusLine{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.statusCircle{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:#ff3b30;
+    box-shadow:0 0 12px #ff3b30;
+}
+
+/* ================= TOOLBAR ================= */
+
+.toolbar{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.toolbar button{
+    flex:1;
+    min-width:150px;
+}
+
+/* ================= MAIN ================= */
+
+.dashboard{
+    display:grid;
+    grid-template-columns:2fr 320px;
+    gap:20px;
+}
+
+/* ================= TERMINAL ================= */
+
+.terminalPanel{
+    background:#0b0b0b;
+    border:1px solid #303030;
+    border-radius:14px;
+    overflow:hidden;
+}
+
+.terminalHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#161616;
+    color:#ff4444;
+
+    padding:14px 18px;
+
+    border-bottom:1px solid #333;
+
+    font-weight:bold;
+}
+
+.terminalState{
+    color:#4cff68;
+    font-size:13px;
+}
+
+#terminal{
+    min-height:520px;
+    padding:18px;
+    overflow-y:auto;
+    font-family:Consolas, monospace;
+}
+
+/* ================= SIDE PANEL ================= */
+
+.sidePanel{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.infoCard{
+    background:#101010;
+    border:1px solid #2f2f2f;
+    border-radius:12px;
+    padding:18px;
+
+    transition:.25s;
+}
+
+.infoCard:hover{
+    border-color:#ff3b30;
+    box-shadow:0 0 18px rgba(255,0,0,.2);
+}
+
+.infoCard h3{
+    color:#ff4444;
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.infoCard p{
+    color:#fff;
+    font-size:18px;
+}
+
+/* ================= COMMAND ================= */
+
+.commandBar{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+#commandInput{
+    flex:1;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:950px){
+
+    .dashboard{
+        grid-template-columns:1fr;
+    }
+
+    .topBar{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .statusBox{
+        width:100%;
+    }
+
+}
