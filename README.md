@@ -287,15 +287,7 @@ Potential improvements include:
 
 ---
 
-## 📸 Project Preview
 
-Add a screenshot of the console here:
-
-```markdown
-![DEATHADDER Web Console](assets/screenshot.png)
-```
-
----
 
 ## 👨‍💻 Author
 
